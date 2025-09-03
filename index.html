@@ -43,7 +43,10 @@
             placeholder="Search for Films and TV Shows"
           />
           <button id="searchButton" class="search-btn not-loading btn click">
-            <i class="fa-solid fa-magnifying-glass-arrow-right gold" onclick="searchAPI()"></i>
+            <i
+              class="fa-solid fa-magnifying-glass-arrow-right gold"
+              onclick="searchAPI(), displayResults()"
+            ></i>
           </button>
         </div>
         <img
