@@ -13,13 +13,13 @@ async function searchAPI() {
     (movie) => `<div class="film__wrapper">
             <img
               class="film__img"
-              src=""
+              src="${Poster}"
               alt=""
             />
             <h3 class="film__name">${movie.Title}</h3>
-            <p class="media__type"></p>
+            <p class="media__type">${Type}</p>
             <p class="release__date">Release Date:${movie.Released}</p>
-            <p class="genre">Genre(s):${movie.genre}</p>
+            <p class="genre">Genre(s):${movie.Genre}</p>
             <p class="imdb__rating">Rating:${movie.imdbRating}</p>
           </div>`).join("")
   console.log(limitedMovies);
